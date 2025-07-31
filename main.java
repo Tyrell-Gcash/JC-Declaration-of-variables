@@ -6,6 +6,11 @@
         double instanceDouble = 1234.95;
         
     }
+
+    static int staticHex = 0x1A2B;    
+    static byte staticByte = 1;
+    static String staticString = "Progress, not perfection.";
+
     public static void main(String[] args) {
         
         int localDemal = 100;
@@ -24,9 +29,14 @@
         System.out.println("localString: " + localString);
 
         InstanceVariables instance = new main().new InstanceVariables();
-        System.out.println("Instance Variables:");
+        System.out.println("\nInstance Variables:");
         System.out.println("instanceBinary: " + instance.instanceBinary);
         System.out.println("instanceOctal: " + instance.instanceOctal);
         System.out.println("instanceDouble: " + instance.instanceDouble);
+
+        System.out.println("\nStatic Variables:");
+        System.out.println("staticHex: " + staticHex);
+        System.out.println("staticByte: " + staticByte);
+        System.out.println("staticString: " + staticString);
     }
  }
